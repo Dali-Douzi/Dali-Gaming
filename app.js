@@ -68,3 +68,41 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+/*FORM*/
+
+function submitForm() {
+  // Get the form element
+  var form = document.getElementById("myForm");
+
+  // Get the values of the form elements
+  var name = form.elements.name.value;
+  var email = form.elements.email.value;
+  var message = form.elements.message.value;
+
+  // Validate the form values
+  if (name === "") {
+    alert("Name is required!");
+    return false;
+  }
+  if (email === "") {
+    alert("Email is required!");
+    return false;
+  }
+  if (message === "") {
+    alert("Message is required!");
+    return false;
+  }
+
+  // If the form is valid, send the data to the server
+  // (in this example, we will just log the data to the console)
+  console.log("Name: " + name);
+  console.log("Email: " + email);
+  console.log("Message: " + message);
+
+  // Reset the form
+  form.reset();
+
+  // Prevent the form from being submitted
+  return false;
+}

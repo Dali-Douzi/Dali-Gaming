@@ -44,7 +44,26 @@
       <div class="hero__container">
         <h1 class="hero__heading">Welcome to <span>Gaming</span></h1>
         <p class="hero__description">made simple</p>
-        <div class="slideshow-container">
+        <section aria-label="Newest Photos">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="Products/Slideshow/1.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="Products/Slideshow/2.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="Products/Slideshow/3.jpg" style="width: 100%" />
+            </div>
+            <div class="mySlides fade">
+              <img src="Products/Slideshow/4.jpg" style="width: 100%" />
+            </div>
+            <div class="mySlides fade">
+              <img src="Products/Slideshow/5.jpg" style="width: 100%" />
+            </div>
+          </div>
           <div style="text-align: center">
             <span class="dot"></span>
             <span class="dot"></span>
@@ -52,22 +71,7 @@
             <span class="dot"></span>
             <span class="dot"></span>
           </div>
-          <div class="mySlides fade">
-            <img src="Products/Slideshow/1.jpg" style="width: 100%" />
-          </div>
-          <div class="mySlides fade">
-            <img src="Products/Slideshow/2.jpg" style="width: 100%" />
-          </div>
-          <div class="mySlides fade">
-            <img src="Products/Slideshow/3.jpg" style="width: 100%" />
-          </div>
-          <div class="mySlides fade">
-            <img src="Products/Slideshow/4.jpg" style="width: 100%" />
-          </div>
-          <div class="mySlides fade">
-            <img src="Products/Slideshow/5.jpg" style="width: 100%" />
-          </div>
-        </div>
+        </section>
         <button class="main__btn"><a href="#Categories">Explore</a></button>
       </div>
     </div>
@@ -80,8 +84,8 @@
           <div class="card-body">
             <h1 class="card-title">Cases</h1>
             <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad repellat quia minima dolor est consectetur assumenda
-              architecto. Adipisci a sit autem magnam quidem illum qui ipsum debitis veniam minima?
+              PC cases are enclosures that house and protect the components of a desktop computer. Choosing the right PC case is important when
+              building or upgrading a computer, as it can impact aesthetics, cooling, and ease of access to the components.?
             </p>
             <h2 href="#" class="btn btn-primary">Check out Cases</h2>
           </div>
@@ -91,8 +95,9 @@
           <div class="card-body">
             <h1 class="card-title">Motherboards</h1>
             <p class="card-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est possimus quia libero, ratione itaque ad. A facilis quaerat, nihil
-              laudantium minima harum magni voluptatum assumenda eaque. Odio culpa neque dolor.
+              Motherboards are the main circuit boards in computers and devices. They provide connections and interfaces for all the other
+              hardware components. Choosing the right motherboard is important when building or upgrading a computer, as it can impact the
+              overall performance and capabilities of the system.
             </p>
             <h2 href="#" class="btn btn-primary">Check out Motherboards</h2>
           </div>
@@ -102,8 +107,8 @@
           <div class="card-body">
             <h1 class="card-title">Processors</h1>
             <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad repellat quia minima dolor est consectetur assumenda
-              architecto. Adipisci a sit autem magnam quidem illum qui ipsum debitis veniam minima?
+              Central processing units (CPUs) are the main processing components of computers and devices. They execute instructions and perform
+              basic operations. CPUs have a clock speed and come in different architectures.
             </p>
             <h2 href="#" class="btn btn-primary">Check out CPUs</h2>
           </div>
@@ -113,8 +118,9 @@
           <div class="card-body">
             <h1 class="card-title">Graphics Cards</h1>
             <p class="card-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque exercitationem nihil voluptatibus molestias quaerat est ipsa
-              aliquid quia cumque eaque eveniet molestiae, autem doloribus cum praesentium. Dolorum laborum nemo molestias?
+              Graphic cards, or GPUs, are hardware used to display and process graphics in computers and devices. They are particularly useful
+              for tasks like gaming, video editing, and 3D rendering. They have dedicated memory and processing power and come in different
+              performance levels.
             </p>
             <h2 href="#" class="btn btn-primary">Check out GPUs</h2>
           </div>
@@ -124,8 +130,8 @@
           <div class="card-body">
             <h1 class="card-title">RAM</h1>
             <p class="card-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque exercitationem nihil voluptatibus molestias quaerat est ipsa
-              aliquid quia cumque eaque eveniet molestiae, autem doloribus cum praesentium. Dolorum laborum nemo molestias?
+              Random Access Memory (RAM) is a type of computer memory used to store data temporarily while the computer is running. It allows
+              the computer to perform multiple tasks at the same time. RAM comes in different speeds, sizes, and types.
             </p>
             <h2 href="#" class="btn btn-primary">Check out RAMs</h2>
           </div>
@@ -135,8 +141,8 @@
           <div class="card-body">
             <h1 class="card-title">SSDs</h1>
             <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad repellat quia minima dolor est consectetur assumenda
-              architecto. Adipisci a sit autem magnam quidem illum qui ipsum debitis veniam minima?
+              Solid-state drives (SSDs) and hard disk drives (HDDs) are types of storage used in computers. SSDs are faster and more reliable,
+              but also more expensive and have less capacity. HDDs are slower and less reliable, but cheaper and have larger capacity.
             </p>
             <h2 href="#" class="btn btn-primary">Check out SSDs</h2>
           </div>
@@ -557,7 +563,9 @@
           <h1>Join Our Team</h1>
           <h2>Sign Up Today</h2>
           <p>See what makes us different</p>
-          <button class="main__btn"><a href="#">Sign Up</a></button>
+          <form action="Form.html">
+            <button class="main__btn"><a href="#Form.html" target="_blank">Sign Up</a></button>
+          </form>
         </div>
         <div class="main__img--container">
           <div class="main__img--card" id="card-2">
