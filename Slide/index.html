@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- The slideshow container -->
+    <ul class="slideshow">
+      <!-- Slide 1 -->
+      <li>
+        <img src="Products/Slideshow/1.jpg" alt="Slide 1" />
+        <div class="text">Caption for slide 1</div>
+      </li>
+      <!-- Slide 2 -->
+      <li>
+        <img src="Products/Slideshow/2.jpg" alt="Slide 2" />
+        <div class="text">Caption for slide 2</div>
+      </li>
+      <!-- Slide 3 -->
+      <li>
+        <img src="Products/Slideshow/3.jpg" alt="Slide 3" />
+        <div class="text">Caption for slide 3</div>
+      </li>
+    </ul>
+
+    <!-- The "prev" and "next" buttons -->
+    <a class="prev" onclick="prevSlide()">&#10094;</a>
+    <a class="next" onclick="nextSlide()">&#10095;</a>
+
+    <!-- The dots/bullets -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </body>
+</html>
