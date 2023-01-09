@@ -255,47 +255,66 @@
 .main {
   background: #000000;
   background: linear-gradient(to right, #000000, #222122);
-  padding: 10rem 0;
+  padding-bottom: 5cm;
 }
 
 .main__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  height: 90%;
+  grid-template-columns: repeat(3, 1fr);
   z-index: 1;
   width: 100%;
-  max-width: 1000px;
-  padding: 2px 16px;
+  margin-left: auto;
 }
 
 #container-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 #430b80;
   transition: 0.3s;
+  margin-top: 3cm;
+  width: 20rem; 
+  margin-left: 4cm;
+}
+
+#container-card a{
+  text-decoration: none;
 }
 
 #container-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 #00ffdda8;
+}
+
+#container-card:hover h1 {
+  color: #00ffdda8;
+  transition-delay: 120ms;
+}
+
+.card-img-top {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.card-text {
+  color: white;
+  margin: 1cm;
+}
+
+.card-title {
+  text-align: center;
+  color: #5a0baf;
+}
+
+/*Signup menu*/
+.signup{
+  background: linear-gradient(to right, #161616, #000000);
+  padding: 200px 0;
 }
 
 .main__content {
-  color: #ff0000;
+  color: #00eeff;
   width: 100%;
 }
 
-.main__content h1 {
-  font-size: 2rem;
-  background-color: #00ffbf;
-  background-image: linear-gradient(to top, #00ffbf 0%, #3700ff 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
+
 
 .main__content h2 {
   font-size: 4rem;
@@ -313,6 +332,7 @@
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
+  margin-left: 1cm;
 }
 
 .main__btn {
@@ -562,24 +582,6 @@
     padding: 10px;
     width: 100%;
   }
-}
-
-.card-img-top {
-  float: right;
-  width: 300px;
-  height: 300px;
-}
-.card-text {
-  color: white;
-}
-
-.card-title {
-  text-align: center;
-  color: #4267c4;
-}
-
-.btn {
-  color: #00ffb7;
 }
 
 /*FORM*/
