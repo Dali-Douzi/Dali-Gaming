@@ -17,108 +17,153 @@
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="#home" id="navbar__logo" onClick="window.location.reload()">Dali Gaming</a>
+        <a href="#home" id="navbar__logo" onClick="window.location.reload()">Dali PC</a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="#home" class="navbar__links" id="home-page">Home</a>
+            <a href="index.html#home" class="navbar__links" id="home-page">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="#Categories" class="navbar__links" id="categories-page">Categories</a>
+            <a href="index.html#Categories" class="navbar__links" id="categories-page">Categories</a>
           </li>
           <li class="navbar__item">
-            <a href="#products" class="navbar__links" id="products-page">Products</a>
+            <a href="#cart" class="navbar__links" id="cart-button">Cart</a>
           </li>
           <li class="navbar__btn">
-            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+            <a href="#sign-up" class="signup-button" id="signup-button">Sign Up</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div id="products" class="products">
-        <div id="SSD" class="SSD">
-            <h1>Storage</h1>
-            <br />
-            <div class="row">
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/AORUS NVMe Gen4 SSD 1 To.jpg" alt="SSD 1" />
-                  <p>AORUS NVMe Gen4 SSD 1 To</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/DISQUE DUR INTERNE SEAGATE 1TO SATA 7200 RPM.jpg" alt="SSD 2" />
-                  <p>DISQUE DUR INTERNE SEAGATE 1TO SATA 7200 RPM</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/DISQUE DUR SEAGATE 2TB SATA-3.jpg" alt="SSD 3" />
-                  <p>DISQUE DUR SEAGATE 2TB SATA-3</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/DISQUE SSD CORSAIR 1TO M.2 NVME GEN4.jpg" alt="SSD 4" />
-                  <p>DISQUE SSD CORSAIR 1TO M.2 NVME GEN4</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/DISQUE SSD PATRIOT BURST SATA3  960GO.jpg" alt="SSD 5" />
-                  <p>DISQUE SSD PATRIOT BURST SATA3 960GO</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/DISQUE SSD PATRIOT NVME VP4100 M.2 2280 PCIE -1TO.jpg" alt="SSD 6" />
-                  <p>DISQUE SSD PATRIOT NVME VP4100 M.2 2280 PCIE</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/DISQUE SSD PATRIOT NVME VP4100 M.2 2280 PCIE -2TO.jpg" alt="SSD 7" />
-                  <p>DISQUE SSD PATRIOT NVME VP4100 M.2 2280 PCIE -2TO</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/MSI SSD SPATIUM M390 NVME M.2 500GB.jpg" alt="SSD 8" />
-                  <p>MSI SSD SPATIUM M390 NVME M.2 500GB</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/PATRIOT SSD BURST 480GB SATA3 2.5 560 MOS.jpg" alt="SSD 9" />
-                  <p>PATRIOT SSD BURST 480GB SATA3 2.5 560 MOS</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/SSD/SSD GIGABYTE 1T M.2 NVME GEN4 AORUS.jpg" alt="SSD 10" />
-                  <p>SSD GIGABYTE 1T M.2 NVME GEN4 AORUS</p>
-                </div>
-              </div>
+      <div id="SSD" class="SSD">
+        <h1>Storage</h1>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/SSD/DISQUE DUR INTERNE SEAGATE 1TO SATA 7200 RPM.jpg" alt="SSD 1" />
+              <footer>
+                <div class="product-name">SEAGATE 1TO SATA 7200 RPM</div>
+                <p>109DT</p>
+                <button class="addbutton" href="#cartmenu">Add to Cart</button>
+              </footer>
             </div>
           </div>
+          <div class="column">
+          <div class="product-card">
+            <img src="Products/SSD/DISQUE DUR SEAGATE 2TB SATA-3.jpg" alt="SSD 2" />
+            <footer>
+              <div class="product-name">BURST 480GB SATA3 2.5 560 MOS</div>
+              <p>199DT</p>
+              <button class="addbutton" href="#cartmenu">Add to Cart</button>
+            </footer>
+          </div>
         </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/SSD/PATRIOT SSD BURST 480GB SATA3 2.5 560 MOS.jpg" alt="SSD 3" />
+              <footer>
+                <div class="product-name">PATRIOT BURST 480GB SATA3 2.5</div>
+                <p>199DT</p>
+                <button class="addbutton" href="#cartmenu">Add to Cart</button>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/SSD/DISQUE SSD PATRIOT BURST SATA3  960GO.jpg" alt="SSD 4" />
+              <footer>
+                <div class="product-name">PATRIOT BURST SATA3  960GO</div>
+                <p>239DT</p>
+                <button class="addbutton" href="#cartmenu">Add to Cart</button>
+              </footer>
+            </div>
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/SSD/MSI SSD SPATIUM M390 NVME M.2 500GB.jpg" alt="SSD 5" />
+              <footer>
+                <div class="product-name">MSI SSD SPATIUM M390 NVME M.2 500GB</div>
+                <p>259DT</p>
+                <button class="addbutton" href="#cartmenu">Add to Cart</button>
+              </footer>
+            </div>
+          </div>
+        <div class="column">
+          <div class="product-card">
+            <img src="Products/SSD/DISQUE SSD PATRIOT NVME VP4100 M.2 2280 PCIE -1TO.jpg" alt="SSD 6" />
+            <footer>
+              <div class="product-name">PATRIOT NVME VP4100 M.2 2280 PCIE -1TO</div>
+              <p>299DT</p>
+              <button class="addbutton" href="#cartmenu">Add to Cart</button>
+            </footer>
+          </div>
+        </div>
+        <div class="column">
+          <div class="product-card">
+            <img src="Products/SSD/DISQUE SSD PATRIOT NVME VP4100 M.2 2280 PCIE -2TO.jpg" alt="SSD 7" />
+            <footer>
+              <div class="product-name">PATRIOT NVME VP4100 M.2 2280 PCIE -2TO</div>
+              <p>349DT</p>
+              <button class="addbutton" href="#cartmenu">Add to Cart</button>
+            </footer>
+          </div>
+        </div>
+        <div class="column">
+          <div class="product-card">
+            <img src="Products/SSD/DISQUE SSD CORSAIR 1TO M.2 NVME GEN4.jpg" alt="SSD 8" />
+            <footer>
+              <div class="product-name">CORSAIR 1TO M.2 NVME GEN4</div>
+              <p>399DT</p>
+              <button class="addbutton" href="#cartmenu">Add to Cart</button>
+            </footer>
+          </div>
+        </div>
+        <div class="column">
+          <div class="product-card">
+            <img src="Products/SSD/AORUS NVMe Gen4 SSD 1 To.jpg" alt="SSD 9" />
+            <footer>
+              <div class="product-name">AORUS NVMe Gen4 SSD 1 To</div>
+              <p>449DT</p>
+              <button class="addbutton" href="#cartmenu">Add to Cart</button>
+            </footer>
+          </div>
+        </div>
+        <div class="column">
+          <div class="product-card">
+            <img src="Products/SSD/SSD GIGABYTE 1T M.2 NVME GEN4 AORUS.jpg" alt="SSD 10" />
+            <footer>
+              <div class="product-name">GIGABYTE 1T M.2 NVME GEN4 AORUS</div>
+              <p>549DT</p>
+              <button class="addbutton" href="#cartmenu">Add to Cart</button>
+            </footer>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Footer Section -->
     <div class="footer__container">
       <div class="footer__links">
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>About Us</h2>
-            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a> <a href="/">Careers</a> <a href="/">Terms of Service</a>
+            <a href="/">How it works</a>
+            <a href="/">Testimonials</a>
+            <a href="/">Careers</a>
+            <a href="/">Terms of Service</a>
           </div>
           <div class="footer__link--items">
             <h2>Contact Us</h2>
-            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Contact</a>
+            <a href="/">Support</a>
             <a href="/">Destinations</a>
           </div>
         </div>
@@ -140,10 +185,9 @@
           <p class="website__rights">© DALI GAMING 2023. All rights reserved</p>
           <div class="social__icons">
             <a href="https://www.facebook.com/dali.douzi.69" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/dalidouzi/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCgn5CJ0Lv4RX88iv2U7SY-g" class="social__icon--link"><i class="fab fa-youtube"></i></a>
-            <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/dalidouzi4" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/dalidouzi/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCgn5CJ0Lv4RX88iv2U7SY-g" class="social__icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/dalidouzi4" class="social__icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </section>

@@ -17,107 +17,213 @@
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="#home" id="navbar__logo" onClick="window.location.reload()">Dali Gaming</a>
+        <a href="#home" id="navbar__logo" onClick="window.location.reload()">Dali PC</a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="#home" class="navbar__links" id="home-page">Home</a>
+            <a href="index.html#home" class="navbar__links" id="home-page">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="#Categories" class="navbar__links" id="categories-page">Categories</a>
+            <a href="index.html#Categories" class="navbar__links" id="categories-page">Categories</a>
           </li>
           <li class="navbar__item">
-            <a href="#products" class="navbar__links" id="products-page">Products</a>
+            <a href="#cart" class="navbar__links" id="cart-button">Cart</a>
           </li>
           <li class="navbar__btn">
-            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+            <a href="#sign-up" class="signup-button" id="signup-button">Sign Up</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div id="products" class="products">
-        <div id="GPU" class="GPU">
-            <h1>Graphics Cards</h1>
-            <br />
-            <div class="row">
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/ASUS RTX 2060 DUAL OC 6GB EVO.jpg" alt="GPU 1" />
-                  <p>ASUS RTX 2060 DUAL OC 6GB EVO</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/ASUS TUF GeForce RTX 3070 Ti O8G GAMING.jpg" alt="GPU 2" />
-                  <p>ASUS TUF GeForce RTX 3070 Ti O8G GAMING</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/Gigabyte GeForce RTX 3050 EAGLE 8G (LHR).jpg" alt="GPU 3" />
-                  <p>Gigabyte GeForce RTX 3050 EAGLE 8G</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/Gigabyte GeForce RTX 3080 Ti VISION OC 12G.jpg" alt="GPU 4" />
-                  <p>Gigabyte GeForce RTX 3080 Ti VISION OC 12G</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/MSI Geforce GTX 1660 SUPER VENTUS XS OC 6GB.jpg" alt="GPU 5" />
-                  <p>MSI Geforce GTX 1660 SUPER VENTUS XS OC 6GB</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/MSI GeForce RTX 3060 Ti GAMING X 8G LHR.jpg" alt="GPU 6" />
-                  <p>MSI GeForce RTX 3060 Ti GAMING X 8G</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/MSI GeForce RTX 3090 Ti GAMING X TRIO 24Go.jpg" alt="GPU 7" />
-                  <p>MSI GeForce RTX 3090 Ti GAMING X TRIO 24Go</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/MSI GeForce RTX 3090 VENTUS 3X 24G OC.jpg" alt="GPU 8" />
-                  <p>MSI GeForce RTX 3090 VENTUS 3X 24G OC</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/MSI Radeon RX 6800 XT GAMING X TRIO 16GB.jpg" alt="GPU 9" />
-                  <p>MSI Radeon RX 6800 XT GAMING X TRIO 16GB</p>
-                </div>
-              </div>
-              <div class="column">
-                <div class="product-card">
-                  <img src="Products/GPU/MSI RTX 4090 SUPRIM X 24G.jpg" alt="GPU 10" />
-                  <p>MSI RTX 4090 SUPRIM X 24G</p>
-                </div>
-              </div>
-            </div>
+      <div id="GPU" class="GPU">
+        <h1>Graphics Cards</h1>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/MSI Geforce GTX 1660 SUPER VENTUS XS OC 6GB.jpg" alt="GPU 1" />
+                  <footer>
+                    <div class="product-name">
+                      MSI Geforce GTX 1660 SUPER VENTUS XS OC 6GB
+                    </div>
+                    <p>
+                      1990DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
           </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/ASUS RTX 2060 DUAL OC 6GB EVO.jpg" alt="GPU 2" />
+                  <footer>
+                    <div class="product-name">
+                      ASUS RTX 2060 DUAL OC EVO 6GB
+                    </div>
+                    <p>
+                      2700DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/Gigabyte GeForce RTX 3050 EAGLE 8G (LHR).jpg" alt="GPU 3" />
+                  <footer>
+                    <div class="product-name">
+                      Gigabyte GeForce RTX 3050 EAGLE 8G
+                    </div>
+                    <p>
+                      2799DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/MSI GeForce RTX 3060 Ti GAMING X 8G LHR.jpg" alt="GPU 4" />
+                  <footer>
+                    <div class="product-name">
+                      MSI GeForce RTX 3060 Ti GAMING X 8G LHR
+                    </div>
+                    <p>
+                      2899DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/ASUS TUF GeForce RTX 3070 Ti O8G GAMING.jpg" alt="GPU 5" />
+                  <footer>
+                    <div class="product-name">
+                      ASUS TUF GeForce RTX 3070 Ti O8G GAMING
+                    </div>
+                    <p>
+                      3099DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/Gigabyte GeForce RTX 3080 Ti VISION OC 12G.jpg" alt="GPU 6" />
+                  <footer>
+                    <div class="product-name">
+                      Gigabyte GeForce RTX 3080 Ti VISION OC 12G
+                    </div>
+                    <p>
+                      3399DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/MSI Radeon RX 6800 XT GAMING X TRIO 16GB.jpg" alt="GPU 7" />
+                  <footer>
+                    <div class="product-name">
+                      MSI Radeon RX 6800 XT GAMING X TRIO 16GB
+                    </div>
+                    <p>
+                      3599DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/MSI GeForce RTX 3090 VENTUS 3X 24G OC.jpg" alt="GPU 8" />
+                  <footer>
+                    <div class="product-name">
+                      MSI GeForce RTX 3090 VENTUS 3X 24G OC
+                    </div>
+                    <p>
+                      3999DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/MSI GeForce RTX 3090 Ti GAMING X TRIO 24Go.jpg" alt="GPU 9" />
+                  <footer>
+                    <div class="product-name">
+                      MSI GeForce RTX 3090 Ti GAMING X TRIO 24Go
+                    </div>
+                    <p>
+                      4299DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
+          </div>
+          <div class="column">
+            <div class="product-card">
+              <img src="Products/GPU/MSI RTX 4090 SUPRIM X 24G.jpg" alt="GPU 10" />
+                  <footer>
+                    <div class="product-name">
+                      MSI RTX 4090 SUPRIM X 24G
+                    </div>
+                    <p>
+                      4599DT
+                    </p>
+                      <button class="addbutton" href="#cartmenu">
+                        Add to Cart
+                      </button>
+                  </footer>
+            </div> 
+          </div>
+      </div>
     </div>
 
+    <!-- Footer Section -->
     <div class="footer__container">
       <div class="footer__links">
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>About Us</h2>
-            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a> <a href="/">Careers</a> <a href="/">Terms of Service</a>
+            <a href="/">How it works</a>
+            <a href="/">Testimonials</a>
+            <a href="/">Careers</a>
+            <a href="/">Terms of Service</a>
           </div>
           <div class="footer__link--items">
             <h2>Contact Us</h2>
-            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Contact</a>
+            <a href="/">Support</a>
             <a href="/">Destinations</a>
           </div>
         </div>
@@ -139,10 +245,9 @@
           <p class="website__rights">© DALI GAMING 2023. All rights reserved</p>
           <div class="social__icons">
             <a href="https://www.facebook.com/dali.douzi.69" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/dalidouzi/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCgn5CJ0Lv4RX88iv2U7SY-g" class="social__icon--link"><i class="fab fa-youtube"></i></a>
-            <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/dalidouzi4" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/dalidouzi/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCgn5CJ0Lv4RX88iv2U7SY-g" class="social__icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/dalidouzi4" class="social__icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </section>
