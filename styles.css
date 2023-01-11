@@ -674,7 +674,7 @@ label {
   color: #ffffff;
 }
 
-form-button {
+.form-button {
   background-color: #4caf50;
   background-image: linear-gradient(to top, #00ffbf 0%, #9d00ff 100%);
   color: #000000;
@@ -687,6 +687,3 @@ form-button {
   justify-content: center;
 }
 
-form-button:hover {
-  background-color: #45a049;
-}
