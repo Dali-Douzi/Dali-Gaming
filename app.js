@@ -8,34 +8,35 @@ const mobileMenu = () => {
   menuLinks.classList.toggle('active');
 };
 
-menu.addEventListener('click', mobileMenu);
+if (menu) {
+  menu.addEventListener('click', mobileMenu);
+}
 
 // Show active menu when scrolling
 const highlightMenu = () => {
   const elem = document.querySelector(".highlight");
   const homeMenu = document.querySelector("#home-page");
   const aboutMenu = document.querySelector("#categories-page");
-  const servicesMenu = document.querySelector("#-page");
+  const servicesMenu = document.querySelector("#services-page");
   let scrollPos = window.scrollY;
-  // console.log(scrollPos);
 
   // adds 'highlight' class to my menu items
   if (window.innerWidth > 960 && scrollPos < 600) {
-    homeMenu.classList.add("highlight");
-    aboutMenu.classList.remove("highlight");
+    if (homeMenu) homeMenu.classList.add("highlight");
+    if (aboutMenu) aboutMenu.classList.remove("highlight");
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1400) {
-    aboutMenu.classList.add("highlight");
-    homeMenu.classList.remove("highlight");
-    servicesMenu.classList.remove("highlight");
+    if (aboutMenu) aboutMenu.classList.add("highlight");
+    if (homeMenu) homeMenu.classList.remove("highlight");
+    if (servicesMenu) servicesMenu.classList.remove("highlight");
     return;
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
-    servicesMenu.classList.add("highlight");
-    aboutMenu.classList.remove("highlight");
+    if (servicesMenu) servicesMenu.classList.add("highlight");
+    if (aboutMenu) aboutMenu.classList.remove("highlight");
     return;
   }
 
-  if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
+  if ((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
     elem.classList.remove("highlight");
   }
 };
@@ -52,67 +53,107 @@ const hideMobileMenu = () => {
   }
 };
 
-menuLinks.addEventListener("click", hideMobileMenu);
-navLogo.addEventListener("click", hideMobileMenu);
+if (menuLinks) {
+  menuLinks.addEventListener("click", hideMobileMenu);
+}
+
+if (navLogo) {
+  navLogo.addEventListener("click", hideMobileMenu);
+}
 
 // SLIDESHOW
-
 let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  
+  if (slides.length > 0) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    if (dots[slideIndex - 1]) {
+      dots[slideIndex - 1].className += " active";
+    }
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-/*FORM*/
+/*FORM VALIDATION*/
+const signupForm = document.getElementById("signupForm");
 
-function submitForm() {
-  // Get the form element
-  var form = document.getElementById("myForm");
+if (signupForm) {
+  signupForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    // Get form values
+    const firstname = document.getElementById("firstname").value.trim();
+    const lastname = document.getElementById("lastname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
 
-  // Get the values of the form elements
-  var name = form.elements.name.value;
-  var email = form.elements.email.value;
-  var message = form.elements.message.value;
+    // Validate form
+    if (firstname === "") {
+      alert("First name is required!");
+      return false;
+    }
+    
+    if (lastname === "") {
+      alert("Last name is required!");
+      return false;
+    }
+    
+    if (email === "") {
+      alert("Email is required!");
+      return false;
+    }
+    
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address!");
+      return false;
+    }
+    
+    if (password === "") {
+      alert("Password is required!");
+      return false;
+    }
+    
+    if (password.length < 6) {
+      alert("Password must be at least 6 characters long!");
+      return false;
+    }
+    
+    if (confirmPassword === "") {
+      alert("Please confirm your password!");
+      return false;
+    }
+    
+    if (password !== confirmPassword) {
+      alert("Passwords do not match!");
+      return false;
+    }
 
-  // Validate the form values
-  if (name === "") {
-    alert("Name is required!");
+    // If all validations pass
+    alert("Sign up successful! Welcome " + firstname + " " + lastname + "!");
+    console.log("Form submitted:");
+    console.log("Name: " + firstname + " " + lastname);
+    console.log("Email: " + email);
+    
+    // Reset the form
+    signupForm.reset();
+    
     return false;
-  }
-  if (email === "") {
-    alert("Email is required!");
-    return false;
-  }
-  if (message === "") {
-    alert("Message is required!");
-    return false;
-  }
-
-  // If the form is valid, send the data to the server
-  // (in this example, we will just log the data to the console)
-  console.log("Name: " + name);
-  console.log("Email: " + email);
-  console.log("Message: " + message);
-
-  // Reset the form
-  form.reset();
-
-  // Prevent the form from being submitted
-  return false;
+  });
 }

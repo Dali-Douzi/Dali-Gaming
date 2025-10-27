@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dali Gaming</title>
+    <title>Dali PC - Sign Up</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -17,7 +17,7 @@
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="#home" id="navbar__logo" onClick="window.location.reload()">Dali PC</a>
+        <a href="index.html" id="navbar__logo">Dali PC</a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
@@ -33,30 +33,30 @@
             <a href="#cart" class="navbar__links" id="cart-button">Cart</a>
           </li>
           <li class="navbar__btn">
-            <a href="#sign-up" class="signup-button" id="signup-button">Sign Up</a>
+            <a href="Form.html" class="signup-button" id="signup-button">Sign Up</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <form id="signupForm">
-      <label for="first name">First Name:</label><br />
-      <input type="text" id="firstname" name="firstname" /><br />
+      <label for="firstname">First Name:</label><br />
+      <input type="text" id="firstname" name="firstname" required /><br />
       <br />
-      <label for="last name">Last Name:</label><br />
-      <input type="text" id="lastname" name="firstname" /><br />
+      <label for="lastname">Last Name:</label><br />
+      <input type="text" id="lastname" name="lastname" required /><br />
       <br />
       <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br />
+      <input type="email" id="email" name="email" required /><br />
       <br />
       <label for="password">Password:</label><br />
-      <input type="password" id="password" name="password" /><br />
+      <input type="password" id="password" name="password" required /><br />
       <br />
       <label for="confirmPassword">Confirm Password:</label><br />
-      <input type="password" id="confirmPassword" name="confirmPassword" /><br />
+      <input type="password" id="confirmPassword" name="confirmPassword" required /><br />
       <br />
       <br />
-      <button class="form-button" type="submit" onclick="submitSignupForm()"><h2>Sign Up</h2></button>
+      <button class="form-button" type="submit"><h2>Sign Up</h2></button>
     </form>
 
     <div class="footer__container">
@@ -64,11 +64,15 @@
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>About Us</h2>
-            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a> <a href="/">Careers</a> <a href="/">Terms of Service</a>
+            <a href="/">How it works</a> 
+            <a href="/">Testimonials</a> 
+            <a href="/">Careers</a> 
+            <a href="/">Terms of Service</a>
           </div>
           <div class="footer__link--items">
             <h2>Contact Us</h2>
-            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Contact</a> 
+            <a href="/">Support</a>
             <a href="/">Destinations</a>
           </div>
         </div>
@@ -85,15 +89,14 @@
       <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <a href="" id="footer__logo">Dali Gaming</a>
+            <a href="index.html" id="footer__logo">Dali PC</a>
           </div>
-          <p class="website__rights">© DALI GAMING 2023. All rights reserved</p>
+          <p class="website__rights">© DALI PC 2023. All rights reserved</p>
           <div class="social__icons">
             <a href="https://www.facebook.com/dali.douzi.69" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/dalidouzi/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCgn5CJ0Lv4RX88iv2U7SY-g" class="social__icon--link"><i class="fab fa-youtube"></i></a>
-            <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/dalidouzi4" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/dalidouzi/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCgn5CJ0Lv4RX88iv2U7SY-g" class="social__icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/dalidouzi4" class="social__icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </section>

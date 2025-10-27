@@ -1,0 +1,112 @@
+/* Style the list of slides */
+ul.slideshow {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+
+/* Style the list items (slides) */
+ul.slideshow li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  -webkit-animation: fade 60s infinite;
+  -moz-animation: fade 60s infinite;
+  -ms-animation: fade 60s infinite;
+  -o-animation: fade 60s infinite;
+  animation: fade 60s infinite;
+}
+
+/* Style the current slide */
+ul.slideshow li:nth-child(1) {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Style the next slide */
+ul.slideshow li:nth-child(2) {
+  z-index: 2;
+}
+
+/* Style the next-next slide */
+ul.slideshow li:nth-child(3) {
+  z-index: 3;
+}
+
+/* Style the next-next-next slide */
+ul.slideshow li:nth-child(4) {
+  z-index: 4;
+}
+
+/* Style the next-next-next-next slide */
+ul.slideshow li:nth-child(5) {
+  z-index: 5;
+}
+
+/* Style the navigation buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Style the "next" button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Style the "prev" button */
+.prev {
+  left: 0;
+}
+
+/* Style the navigation buttons on hover */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style the dots/bullets */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Style the active dot/bullet */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Style the caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+}

@@ -95,7 +95,8 @@
   color: #9d00ff;
   transition: all 0.3s ease;
 }
-/*VERY VERY IMPORTANT*/
+
+/*MOBILE RESPONSIVE*/
 @media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;
@@ -189,15 +190,15 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
 .navbar__dropdown {
   display: none;
   background-color: #00eeff;
 }
+
 .show {
   display: block;
 }
-
-
 
 /* Hero Section */
 .hero {
@@ -224,21 +225,21 @@
 }
 
 .hero__heading span {
-  background: #ee0979; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #9d00ff, #00ffbf); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00ffbf, #9d00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ee0979;
+  background: -webkit-linear-gradient(to right, #9d00ff, #00ffbf);
+  background: linear-gradient(to right, #00ffbf, #9d00ff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -mo-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .hero__description {
   font-size: 40px;
-  background: #b1a7b6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #9d00ff, #00ffbf); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #9d00ff, #00ffbf); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #b1a7b6;
+  background: -webkit-linear-gradient(to right, #9d00ff, #00ffbf);
+  background: linear-gradient(to right, #9d00ff, #00ffbf);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -285,7 +286,7 @@
   align-items: center;
 }
 
-#container-card a{
+#container-card a {
   text-decoration: none;
 }
 
@@ -316,7 +317,7 @@
 }
 
 /*Signup menu*/
-.signup{
+.signup {
   background: linear-gradient(to right, #161616, #000000);
   padding: 200px 0;
 }
@@ -329,9 +330,9 @@
 
 .main__content h2 {
   font-size: 4rem;
-  background: #ff8177; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #00ffbf, #9d00ff); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00ffbf, #9d00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ff8177;
+  background: -webkit-linear-gradient(to right, #00ffbf, #9d00ff);
+  background: linear-gradient(to right, #00ffbf, #9d00ff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -446,8 +447,8 @@
   clear: both;
 }
 
-/* Style the counter cards */
-.column{
+/* Style the product cards */
+.column {
   padding: 30px;
 }
 
@@ -459,15 +460,14 @@
   padding: 10px;
   border-radius: 2%;
   text-align: center;
-  background-color: #463b3b;
-  margin: 20px;
   background-color: #ffffff;
+  margin: 20px;
   position: relative;
   min-height: 500px;
   height: auto;
 }
 
-.product-card footer{
+.product-card footer {
   flex-grow: 1;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.87);
@@ -479,22 +479,30 @@
   height: auto;
 }
 
-.product-name{
+.product-name {
   margin-top: 20px;
-  font: bold;
+  font-weight: bold;
   font-size: larger;
   color: #ffffff;
 }
 
-.addbutton{
-  background: linear-gradient(to right,#03aa80, #2a3fff, #03aa80);
-  font: bolder;
+.addbutton {
+  background: linear-gradient(to right, #03aa80, #2a3fff, #03aa80);
+  font-weight: bolder;
   font-size: 0.5cm;
   padding: 10px;
   margin-bottom: 15px;
   margin-top: 15px;
   cursor: pointer;
   color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.addbutton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 255, 191, 0.3);
 }
 
 .products img {
@@ -518,7 +526,7 @@
   background-size: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -mo-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   text-align: center;
 }
 
@@ -571,12 +579,12 @@
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
-  transition: 0.3 ease-out;
+  transition: 0.3s ease-out;
 }
 
 .footer__link--items a:hover {
   color: #e9e9e9;
-  transition: 0.3 ease-out;
+  transition: 0.3s ease-out;
 }
 
 .social__icon--link {
@@ -647,31 +655,38 @@
   align-items: center;
   justify-content: center;
   padding-left: 10cm;
+  min-height: 60vh;
 }
 
 label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  color: linear-gradient(to bottom, #90ee90, #9400d3);
-  border: 1px solid linear-gradient(to bottom, #90ee90, #9400d3);
-  align-items: center;
-  justify-content: center;
-}
-
-input,
-label {
   background-image: linear-gradient(to top, #00ffbf 0%, #9d00ff 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  text-decoration: none;
   font-size: 1.5rem;
-  align-items: center;
-  justify-content: center;
+}
+
+input {
+  background-color: #1a1a1a;
+  border: 1px solid #430b80;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
   color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #9d00ff;
+  box-shadow: 0 0 10px rgba(157, 0, 255, 0.3);
 }
 
 .form-button {
@@ -680,10 +695,59 @@ label {
   color: #000000;
   padding: 14px 20px;
   margin: 8px 0;
-  border: 1px solid linear-gradient(to bottom, #90ee90, #9400d3);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
+.form-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(157, 0, 255, 0.4);
+}
+
+.form-button h2 {
+  margin: 0;
+  color: #000000;
+}
+
+/* Slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  border-radius: 10px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
