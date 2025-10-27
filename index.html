@@ -30,7 +30,7 @@
             <a href="#Categories" class="navbar__links" id="categories-page">Categories</a>
           </li>
           <li class="navbar__item">
-            <a href="#cart" class="navbar__links" id="cart-button">Cart</a>
+            <a href="#cart" class="navbar__links" id="cart-button">Cart (<span id="cart-count">0</span>)</a>
           </li>
           <li class="navbar__btn">
             <a href="#sign-up" class="signup-button" id="signup-button">Sign Up</a>
@@ -49,21 +49,21 @@
         <section aria-label="Newest Photos">
           <div class="slideshow-container">
             <div class="mySlides fade">
-              <img src="Slideshow/Image/1.jpg" alt="Gaming Setup 1" style="width: 1000px" height="400px" />
+              <img src="Products/Slideshow/1.jpg" alt="Gaming Setup 1" style="width: 1000px" height="400px" />
             </div>
 
             <div class="mySlides fade">
-              <img src="Slideshow/Image/2.jpg" alt="Gaming Setup 2" style="width: 1000px" height="400px" />
+              <img src="Products/Slideshow/2.jpg" alt="Gaming Setup 2" style="width: 1000px" height="400px" />
             </div>
 
             <div class="mySlides fade">
-              <img src="Slideshow/Image/3.jpg" alt="Gaming Setup 3" style="width: 1000px" height="400px" />
+              <img src="Products/Slideshow/3.jpg" alt="Gaming Setup 3" style="width: 1000px" height="400px" />
             </div>
             <div class="mySlides fade">
-              <img src="Slideshow/Image/4.jpg" alt="Gaming Setup 4" style="width: 1000px" height="400px" />
+              <img src="Products/Slideshow/4.jpg" alt="Gaming Setup 4" style="width: 1000px" height="400px" />
             </div>
             <div class="mySlides fade">
-              <img src="Slideshow/Image/5.jpg" alt="Gaming Setup 5" style="width: 1000px" height="400px" />
+              <img src="Products/Slideshow/5.jpg" alt="Gaming Setup 5" style="width: 1000px" height="400px" />
             </div>
           </div>
           <div style="text-align: center">
@@ -151,6 +151,23 @@
       </div>
     </div>
 
+    <!-- Cart Section -->
+    <div class="cart-section" id="cart">
+      <div class="cart-container">
+        <h1>Shopping Cart</h1>
+        <div id="cart-items" class="cart-items">
+          <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-summary">
+          <h2>Total: <span id="cart-total">0DT</span></h2>
+          <button class="main__btn" id="checkout-btn" style="display: none;">
+            <a href="#sign-up">Proceed to Checkout</a>
+          </button>
+          <button class="clear-cart-btn" id="clear-cart-btn" style="display: none;">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Sign up Section -->
     <div class="signup" id="sign-up">
       <div class="main__container">
@@ -205,7 +222,7 @@
           <div class="footer__logo">
             <a href="/" id="footer__logo">Dali PC</a>
           </div>
-          <p class="website__rights">© DALI PC 2023. All rights reserved</p>
+          <p class="website__rights">© DALI PC <span id="current-year"></span>. All rights reserved</p>
           <div class="social__icons">
             <a href="https://www.facebook.com/dali.douzi.69" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/dalidouzi/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
